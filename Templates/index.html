@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+</head>
+<body>
+    <div>
+        <h1>Diamond Price Prediction</h1>
+        
+        <form action=""methods="POST">
+            <input type="text" name="carat" placeholder="carat" required="required">
+            <input type="text" name="depth" placeholder="depth" required="required">
+            <input type="text" name="table" placeholder="table" required="required">
+            <input type="text" name="x" placeholder="x" required="required">
+            <input type="text" name="y" placeholder="y" required="required">
+            <input type="text" name="z" placeholder="z" required="required">
+            <input type="submit">
+        </form>
+        <p>Your predicted diamond price is:</p>
+        {{cijena}}
+    </div>
+</body>
+</html>
