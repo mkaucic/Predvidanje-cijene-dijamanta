@@ -1,0 +1,74 @@
+/*flexbox first container for all elements*/
+.flexbox-container {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 8%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.flexbox-container{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+/*title element in first flexbox container*/
+.title-container{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color:bisque;
+}
+
+/*submit element in first flexbox container*/
+.submit-container{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color:aqua;
+}
+
+#submit{
+    width: 20em;  height: 2em;
+}
+
+/*prediction element in first flexbox container*/
+.prediction-container{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color:coral;
+}
+
+.prediction-container p {
+    text-align: center;
+}
+
+/*flexbox container inside of flexbox container*/
+.flexbox-cocontainer{
+    max-width: 100%;
+    padding: 10px;
+    background-color: goldenrod;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+/*container inside 2nd flexbox*/
+.container{
+  flex-wrap: wrap;
+  height: 80px;
+  width: 90%;
+  margin: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+  flex: 0 1 20%;
+}
+
+.container{
+    background-color:greenyellow;
+    border-radius:25%;
+}

@@ -2,23 +2,99 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>ML API</title>
+  <title>Diamond prediction web page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>Diamond Price Prediction</h1>
-        
-        <form action=""methods="POST">
-            <input type="text" name="carat" placeholder="carat" required="required">
-            <input type="text" name="depth" placeholder="depth" required="required">
-            <input type="text" name="table" placeholder="table" required="required">
-            <input type="text" name="x" placeholder="x" required="required">
-            <input type="text" name="y" placeholder="y" required="required">
-            <input type="text" name="z" placeholder="z" required="required">
-            <input type="submit">
+    <div class="flexbox-container">
+		<div class="title-container">
+        	<h1>Diamond Price Prediction</h1>
+		</div>
+        <form action=""method="POST">
+
+			<div class="flexbox-cocontainer">
+
+				<div class='container'>
+					<p>Input carat value:</p>
+					<input type="text" name="carat" placeholder="carat" required="required" class="carat">
+				</div>
+
+				<div class='container'>
+					<p>Input depth value:</p>
+					<input type="text" name="depth" placeholder="depth" required="required" class="depth">
+				</div>
+
+				<div class='container'>
+					<p>Input table value:</p>
+            		<input type="text" name="table" placeholder="table" required="required" class="table">		
+				</div>
+				
+				<div class='container'>
+					<p>Choose cut class:</p>
+					<select id="cut" name="cut" class="cut">
+						<option value="Ideal">Ideal</option>
+						<option value="Premium">Premium</option>
+						<option value="Very_Good">Very Good</option>
+						<option value="Good">Good</option>
+						<option value="Fair">Fair</option>
+					</select>
+				</div>
+				
+				<div class='container'>
+					<p>Choose color class:</p>
+					<select id="color" name="color" class="color">
+						<option value="D">D</option>
+						<option value="E">E</option>
+						<option value="F">F</option>
+						<option value="G">G</option>
+						<option value="H">H</option>
+						<option value="I">I</option>
+						<option value="J">J</option>
+					</select>
+				</div>
+				
+				<div class='container'>
+					<p>Choose clarity class:</p>
+					<select id="clarity" name="clarity" class="clarity">
+						<option value="IF">IF</option>
+						<option value="VVS1">VVS1</option>
+						<option value="VVS2">VVS2</option>
+						<option value="VS1">VS1</option>
+						<option value="VS2">VS2</option>
+						<option value="SI1">SI1</option>
+						<option value="SI2">SI2</option>
+						<option value="I1">I1</option>
+					</select>	
+				</div>		
+			
+				<div class='container'>
+					<p>Input x direction value:</p>
+            		<input type="text" name="x" placeholder="x" required="required" class="x">			
+				</div>
+			
+				<div class='container'>
+					<p>Input y direction value:</p>
+            		<input type="text" name="y" placeholder="y" required="required" class="y">			
+				</div>
+			
+				<div class='container'>
+					<p>Input z direction value:</p>
+            		<input type="text" name="z" placeholder="z" required="required" class="z">
+				</div>
+			</div>
+				
+			
+			<div class="submit-container">
+            	<input type="submit" id="submit">
+			</div>
         </form>
-        <p>Your predicted diamond price is:</p>
-        {{cijena}}
+		
+		{% if cijena %}
+		<div class="prediction-container">
+        	<p>Your predicted diamond price is: {{cijena}} $</p>
+		</div>
+		{% endif %}
+        
     </div>
 </body>
 </html>
