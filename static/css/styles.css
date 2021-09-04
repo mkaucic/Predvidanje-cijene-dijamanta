@@ -1,3 +1,11 @@
+/*body style*/
+body {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+}
+
 /*flexbox first container for all elements*/
 .flexbox-container {
     display: flex;
@@ -5,13 +13,13 @@
     flex-direction: row;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 8%;
+    margin-top: 2%;
     flex-wrap: wrap;
     padding: 10px;
 }
 
 .flexbox-container{
-    border: 2px solid red;
+    border: 10px solid rgb(241, 152, 152);
     border-radius: 5px;
 }
 
@@ -20,7 +28,12 @@
     width: 100%;
     text-align: center;
     margin: 10px;
-    background-color:bisque;
+}
+
+.title-container h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:45px;
+    color:blue;
 }
 
 /*submit element in first flexbox container*/
@@ -28,7 +41,7 @@
     width: 100%;
     text-align: center;
     margin: 10px;
-    background-color:aqua;
+    margin-top: 5%;
 }
 
 #submit{
@@ -40,18 +53,29 @@
     width: 100%;
     text-align: center;
     margin: 10px;
-    background-color:coral;
+    background-color:rgb(235, 173, 145);
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
 }
 
 .prediction-container p {
     text-align: center;
 }
 
+.prediction-container span{
+    font-size: 35px;
+}
+
+.result{
+    font-size: 40px;
+    color:rgb(214, 91, 91);
+    font-family: Courier;
+}
+
 /*flexbox container inside of flexbox container*/
 .flexbox-cocontainer{
     max-width: 100%;
     padding: 10px;
-    background-color: goldenrod;
     display: flex;
     flex-flow: row wrap;
     justify-content:space-between;
@@ -69,6 +93,8 @@
 }
 
 .container{
-    background-color:greenyellow;
+    background-color:rgb(235, 173, 145);
     border-radius:25%;
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
 }

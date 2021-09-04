@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Diamond prediction web page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="flexbox-container">
@@ -91,7 +91,7 @@
 		
 		{% if cijena %}
 		<div class="prediction-container">
-        	<p>Your predicted diamond price is: {{cijena}} $</p>
+        	<p><span>Your predicted diamond price is:</span> <span class="result">{{cijena}} $</span></p>
 		</div>
 		{% endif %}
         
