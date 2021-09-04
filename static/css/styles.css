@@ -45,7 +45,7 @@ body {
 }
 
 #submit{
-    width: 20em;  height: 2em;
+    width: 20em;  height: 3em;
 }
 
 /*prediction element in first flexbox container*/
@@ -86,7 +86,7 @@ body {
   flex-wrap: wrap;
   height: 80px;
   width: 90%;
-  margin: 10px;
+  margin: 5%;
   padding-left: 1%;
   padding-right: 1%;
   flex: 0 1 20%;
@@ -98,3 +98,26 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color:blue;
 }
+
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+  }
+  
+input[type=text]:focus {
+    width: 100%;
+  }
+
+  input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  select {
+    color: blue;
+    padding: 2px 10px;
+    *background: #58B14C;
+    font-family: Courier;
+  }
